@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  background-color: rgba(45, 50, 50, 0.7); /* Прозорий фон */
+  backdrop-filter: blur(10px); /* Ефект розмивання фону */
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px; /* Заокруглені краї для більшого ефекту */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тінь для глибини */
+  color: white;
+}
+
+.logoLink {
+}
+.logoImg {
+  width: 50px;
+}
+.menuList {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}

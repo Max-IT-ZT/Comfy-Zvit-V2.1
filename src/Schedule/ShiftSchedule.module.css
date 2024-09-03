@@ -1,0 +1,6 @@
+/* ShiftSchedule.module.css */
+.scheduleContainer {
+  display: flex;
+  flex-wrap: wrap; /* Дозволяє карткам переноситись на новий ряд */
+  justify-content: center; /* Центрування карток */
+}

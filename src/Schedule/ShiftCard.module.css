@@ -1,0 +1,10 @@
+ShiftCard.module.css .card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  width: 150px; /* Ширина картки */
+  text-align: center; /* Вирівнювання тексту */
+  background-color: #f9f9f9; /* Колір фону */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для картки */
+}
