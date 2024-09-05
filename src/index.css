@@ -1,11 +1,15 @@
 body {
-  /* ../public/bc8.jpg */
-  /* ../public/bc14.jpg */
-  background-image: url("../public/bc8.jpg");
+  position: relative;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0) 80%,
+      rgb(158, 158, 165) 100%
+    ),
+    url(/public/bc8.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: 115vh;
+  background-color: rgb(158, 158, 165);
 }
 h1,
 h2,

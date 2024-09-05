@@ -1,25 +1,101 @@
 .header {
   display: flex;
-  background-color: rgba(45, 50, 50, 0.7); /* Прозорий фон */
-  backdrop-filter: blur(10px); /* Ефект розмивання фону */
+  background-color: rgba(45, 50, 50, 0.7);
+  backdrop-filter: blur(10px);
   margin-left: -8px;
   margin-right: -8px;
   margin-top: -8px;
   padding: 10px;
   justify-content: space-between;
   align-items: center;
-  border-radius: 8px; /* Заокруглені краї для більшого ефекту */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тінь для глибини */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   color: white;
 }
 
-.logoLink {
+.logo {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
 }
-.logoImg {
-  width: 50px;
+
+.logoText {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
 }
+
+.logoTextSpan {
+  color: rgba(252, 0, 0, 0.848);
+}
+
 .menuList {
   display: flex;
   gap: 10px;
   justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .menuBtn {
+    padding: 10px 25px;
+    min-width: 150px;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+    background-color: rgba(50, 50, 50, 0.522);
+    color: white;
+  }
+  .burgerLine {
+    border: 1.5px solid white;
+    width: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  .burgerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .menuList {
+    display: none;
+  }
+
+  .menuListOpen {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 200%;
+    left: 10%;
+    width: 80%;
+    height: 600px;
+    background-color: rgba(45, 50, 50, 0.9);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .menuListOpen.menuVisible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .line2 {
+    opacity: 0;
+  }
+
+  .line3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
 }
